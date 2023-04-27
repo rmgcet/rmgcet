@@ -11,4 +11,9 @@ def lambda_handler(event, context):
         event_time = record['eventTime']
         dynamoTable = dynamodb.Table('newtable')
         dynamoTable.put_item(
-            Item={'unique': str(uuid4()), 'Bucket': bucket_name, 'Object': object_key,'Size': size, 'Event': event_name, 'EventTime': event_time})
+            Item={'unique': str(uuid4()), 'Bucket': bucket_name, 'Object': object_key,'Size': size, 'Event': event_name, 'EventTime': event_time})git clone https://ninja-at-862190627179:Ccfy+AYW17z5JTN7y6Rjuela3DyMTNn5JXucRtlqglo=https://git-codecommit.ap-south-1.amazonaws.com/v1/repos/docker-repo
+
+ssh git-codecommit.ap-south.amazonaws.com 
+
+docker pull jenkins/jenkins
+docker run --name myjenkins -v myvoll:/var/jenkins_home -p 8080:8080 -p 50000:50000 jenkins
