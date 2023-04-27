@@ -1,0 +1,18 @@
+ #!/bin/bash
+
+fulload() {
+  dd if=/dev/zero of=/dev/null |
+  dd if=/dev/zero of=/dev/null |
+  dd if=/dev/zero of=/dev/null |
+  dd if=/dev/zero of=/dev/null &
+};
+
+$ chmod +x ./dd.sh
+$ ./dd.sh
+
+yum install stress
+
+
+# pacman -Sy stress
+
+ stress --cpu 2
