@@ -1,0 +1,8 @@
+Administrator
+ 5-BkQJp3vS2=l-54Ck)&iG5hQ6H%@dHh
+ 172.31.38.224
+ 
+ ls -lrt | more
+ ps -ef | grep -i pmon
+ ps -ef | grep -i oracleWSPRD | wc -l
+ lsnrctl status wsprd
